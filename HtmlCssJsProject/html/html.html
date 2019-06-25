@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<META charset="UTF-8">
+	<title>Примеры Html-элементов</title>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<h1>Примеры html-элементов и их использования</h1>
+
+	<p>
+		В этом разделе будут собраны все html-элементы и примеры их использования. Не стоит надеяться на то что можно запомнить все элементы просто один раз встретив их и использовав. Нужна практика, плюс некое пособие что как использовать)
+	</p>
+
+	<p>
+		Для начала опишем минимально валидный html (тот, который проходит валидацию на <a href="https://validator.w3.org/">w3org</a>)
+	</p>
+
+	<pre class="prettyprint">
+		<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"/&gt;
+  &lt;title&gt;Здесь должно быть название вашей страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Здесь будет какое то тело вашей html-страницы
+&lt;/body&gt;
+&lt;/html&gt;
+		</code>
+	</pre>
+<p>
+	Тег <code>&lt;nav&gt;<code/> предназначен для хранения навигации по сайту! Не ссылки на другие сайты, как говорит coursera. Обычно он содержит какую то базовую информацию и меню для перехода по сайту. Обычно он находится в теге <code>&lt;header&gt;<code/> в котором помимо навигации может храниться какое то вступление и заголовок.
+</p>
+
+<p>Дальше будет пример сложной таблицы. Можно посмотреть структуру в html-коде</p>
+<table border="1px solid black">
+	<caption>Key Stage 2 Teacher Assessment-possible outcomes</caption>
+	<thead><tr><th colspan="2">Reading</th><th>Writing</th><th>Mathematics</th><th>Science</th></tr></thead>
+	<tr>
+		<th>Higher-attaining</th>
+		<td rowspan="2">Working at the expected standard (EXS)</td>
+		<td>Working at greater depth within the expected standard (GDS)</td>
+		<td rowspan="2">Working at the expexted standard (EXS)</td>
+		<td rowspan="2">Working at the expected standard (EXS)</td>
+	</tr>
+	<tr>
+		<th>Expected attainment</th>
+		<td>Working at the expected standard (EXS)</td>
+	</tr>
+	<tr>
+		<th rowspan="5">Lower attaining</th>
+		<td>Has Not Met the expected standard (HNM)</td>
+		<td>Working towards the expected standard (WTS)</td>
+		<td>Has Not Met the expected standard (HNM)</td>
+		<td rowspan="7">Has Not Met the expected standard (HMM)</td>
+	</tr>
+	<tr>
+		<td>Growing Development of the expected standard (PKG)</td>
+		<td>Growing Development of the expected standard (PKG)</td>
+		<td>Growing Development of the expected standard (PKG)</td>
+	</tr>
+	<tr>
+		<td>Early Development of the expected standard (PKE)</td>
+		<td>Early Development of the expected standard (PKE)</td>
+		<td>Early Development of the expected standard (PKE)</td>
+	</tr>
+	<tr>
+		<td>Foundations for the expected standard (PKF)</td>
+		<td>Foundations for the expected standard (PKF)</td>
+		<td>Foundations for the expected standard (PKF)</td>
+	</tr>
+	<tr>
+		<td>Below the standard of the pre-key stage (BLW)</td>
+		<td>Below the standard of the pre-key stage (BLW)</td>
+		<td>Below the standard of the pre-key stage (BLW)</td>
+	</tr>
+	<tr>
+		<th rowspan="2">Pupils with SEND</th>
+		<td>P-levels:<br/>P4, P5, P6, P7, P8</td>
+		<td>P-levels:<br/>P4, P5, P6, P7, P8</td>
+		<td>P-levels strand:<br/>P4, P5, P6, P7, P8</td>
+	</tr>
+	<tr>
+		<td colspan="2">P1i, P1ii, P2i, P31i, p3ii</td>
+		<td>P1i, P1ii, P2i, P31i, p3ii</td>
+	</tr>
+</table>
+</body>
+</html>
